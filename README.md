@@ -1,6 +1,6 @@
 Python/GTK4 app which allows setting specific formats for detected audio output devices.
 
-Requires Pipewire as well as Wireplumber to be installed on the system
+Requires Pipewire as well as Wireplumber 0.5+ to be installed on the system
 
 Installation:
 
