@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WirePlumber Audio Configurator
+Comment=Set sample rate and format per output device
+Exec=wireplumber-audio-cfg
+Icon=io.github.wireplumber_audio_cfg
+Type=Application
+Categories=AudioVideo;Settings;GNOME;
+Terminal=false
+StartupNotify=true

@@ -1,0 +1,40 @@
+{
+    "app-id": "io.github.wireplumber_audio_cfg",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "50",
+    "sdk": "org.gnome.Sdk",
+    "command": "wireplumber-audio-cfg",
+
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+
+        "--filesystem=xdg-config/wireplumber:create",
+
+        "--talk-name=org.freedesktop.Flatpak",
+
+        "--talk-name=org.freedesktop.systemd1"
+    ],
+
+    "modules": [
+        {
+            "name": "wireplumber-audio-cfg",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm755 wireplumber_audio_cfg.py  /app/lib/wireplumber-audio-cfg/wireplumber_audio_cfg.py",
+                "install -Dm755 wireplumber-audio-cfg     /app/bin/wireplumber-audio-cfg",
+                "install -Dm644 io.github.wireplumber_audio_cfg.desktop     /app/share/applications/io.github.wireplumber_audio_cfg.desktop",
+                "install -Dm644 io.github.wireplumber_audio_cfg.metainfo.xml /app/share/metainfo/io.github.wireplumber_audio_cfg.metainfo.xml",
+                "install -Dm644 io.github.wireplumber_audio_cfg.svg          /app/share/icons/hicolor/scalable/apps/io.github.wireplumber_audio_cfg.svg"
+            ],
+            "sources": [
+                { "type": "file", "path": "wireplumber_audio_cfg.py" },
+                { "type": "file", "path": "wireplumber-audio-cfg" },
+                { "type": "file", "path": "io.github.wireplumber_audio_cfg.desktop" },
+                { "type": "file", "path": "io.github.wireplumber_audio_cfg.metainfo.xml" },
+                { "type": "file", "path": "io.github.wireplumber_audio_cfg.svg" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Hintergrund -->
+  <rect width="128" height="128" rx="28" fill="#1c71d8"/>
+
+  <!-- Lautsprecher-Körper -->
+  <rect x="24" y="46" width="24" height="36" rx="4" fill="white"/>
+  <polygon points="48,46 72,26 72,102 48,82" fill="white"/>
+
+  <!-- Schallwellen -->
+  <path d="M80,46 Q96,64 80,82" stroke="white" stroke-width="6"
+        stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M90,36 Q112,64 90,92" stroke="white" stroke-width="6"
+        stroke-linecap="round" fill="none" opacity="0.55"/>
+
+  <!-- Frequenz-Balken (klein, unten rechts) -->
+  <rect x="78" y="95" width="6"  height="14" rx="2" fill="white" opacity="0.8"/>
+  <rect x="88" y="89" width="6"  height="20" rx="2" fill="white" opacity="0.8"/>
+  <rect x="98" y="93" width="6"  height="16" rx="2" fill="white" opacity="0.8"/>
+  <rect x="108" y="86" width="6" height="23" rx="2" fill="white" opacity="0.8"/>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.wireplumber_audio_cfg</id>
+
+  <name>WirePlumber Audio Configurator</name>
+  <summary>Set sample rate and bit depth per output device</summary>
+
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>
+      GTK4 application for configuring the sample rate and bit depth of
+      individual ALSA output devices under PipeWire / WirePlumber 0.5+.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Fixed sample rate (44.1–192 kHz) and format (S16LE to F32LE) per device</li>
+      <li>"Auto" option lets WirePlumber adapt the rate dynamically per source</li>
+      <li>Live Monitor: shows the currently negotiated format and all active streams</li>
+      <li>Writes directly to ~/.config/wireplumber/wireplumber.conf.d/</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">io.github.wireplumber_audio_cfg.desktop</launchable>
+
+  <url type="homepage">https://github.com/example/wireplumber-audio-cfg</url>
+
+  <provides>
+    <binary>wireplumber-audio-cfg</binary>
+  </provides>
+
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+
+  <releases>
+    <release version="1.0.0" date="2026-01-01">
+      <description><p>Initial release.</p></description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1"/>
+</component>
